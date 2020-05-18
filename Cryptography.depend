@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1549543943 source:c:\users\sarthak\desktop\new folder\cryptography\main.cpp
+	<iostream>
+	<graphics.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	<stdio.h>
+	"welcomeScreen.h"
+	"r_l_screen.h"
+	"log_regs.h"
+	"introduction.h"
+
+1547148553 c:\users\sarthak\desktop\new folder\cryptography\include\welcomescreen.h
+
+1549547331 source:c:\users\sarthak\desktop\new folder\cryptography\src\welcomescreen.cpp
+	<iostream>
+	<graphics.h>
+	"welcomeScreen.h"
+	"r_l_screen.h"
+	"exitfunc.h"
+
+1549547514 source:c:\users\sarthak\desktop\new folder\cryptography\src\r_l_screen.cpp
+	<iostream>
+	<graphics.h>
+	"r_l_screen.h"
+	"welcomeScreen.h"
+	"log_regs.h"
+	"encryptDecrypt.h"
+	"exitfunc.h"
+
+1549542446 c:\users\sarthak\desktop\new folder\cryptography\include\r_l_screen.h
+
+1544514758 c:\users\sarthak\desktop\new folder\cryptography\include\mouse.h
+
+1544514862 source:c:\users\sarthak\desktop\new folder\cryptography\src\mouse.cpp
+	<iostream>
+	<graphics.h>
+	"welcomeScreen.h"
+	"mouse.h"
+
+1549547321 source:c:\users\sarthak\desktop\new folder\cryptography\src\log_regs.cpp
+	<iostream>
+	<fstream>
+	<istream>
+	<stdio.h>
+	<graphics.h>
+	<string>
+	<windows.h>
+	"r_l_screen.h"
+	"welcomeScreen.h"
+	"log_regs.h"
+	"introduction.h"
+	"exitfunc.h"
+
+1549405791 c:\users\sarthak\desktop\new folder\cryptography\include\log_regs.h
+
+1549541337 c:\users\sarthak\desktop\new folder\cryptography\include\introduction.h
+
+1549547317 source:c:\users\sarthak\desktop\new folder\cryptography\src\introduction.cpp
+	<iostream>
+	<graphics.h>
+	"welcomeScreen.h"
+	"r_l_screen.h"
+	"log_regs.h"
+	"introduction.h"
+	"encryptDecrypt.h"
+	"exitfunc.h"
+
+1549547308 source:c:\users\sarthak\desktop\new folder\cryptography\src\encryptdecrypt.cpp
+	<iostream>
+	<graphics.h>
+	<stdio.h>
+	"welcomeScreen.h"
+	"r_l_screen.h"
+	"log_regs.h"
+	"introduction.h"
+	"encryptDecrypt.h"
+	"exitfunc.h"
+
+1549544414 c:\users\sarthak\desktop\new folder\cryptography\include\encryptdecrypt.h
+
+1549547265 c:\users\sarthak\desktop\new folder\cryptography\include\exitfunc.h
+
+1549547685 source:c:\users\sarthak\desktop\new folder\cryptography\src\exitfunc.cpp
+	<iostream>
+	<graphics.h>
+	<stdio.h>
+	"welcomeScreen.h"
+	"r_l_screen.h"
+	"log_regs.h"
+	"introduction.h"
+	"encryptDecrypt.h"
+	"exitfunc.h"
+

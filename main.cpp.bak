@@ -1,0 +1,92 @@
+//! Pre-processor Commands
+
+#define OR ||
+
+//! Libraries
+
+#include <iostream>
+#include <graphics.h>
+#include <conio.h>
+#include <string.h>
+#include <windows.h>
+#include <stdio.h>
+
+//! User-Defined Header Files
+
+#include "welcomeScreen.h"
+#include "r_l_screen.h"
+#include "log_regs.h"
+#include "introduction.h"
+
+//! User Defined Functions Declarations
+
+void windowSize(std::string);
+DWORD getScreenWidth();
+DWORD getScreenHeight();
+
+//! Main Program
+
+int main()
+{
+    std::string getWindowSize;
+    std::cout << "Question : Do you want this program to run full screen?"
+              << std::endl
+              << "Answer : ";
+    windowSize(getWindowSize);
+
+    return 0;
+}
+
+//! User Defined Functions Definitions
+
+void windowSize(std::string getWindowSize) {
+    std::cin >> getWindowSize;
+    system("CLS");
+
+    if (
+        (getWindowSize == "y") OR
+        (getWindowSize == "Y") OR
+        (getWindowSize == "ys") OR
+        (getWindowSize == "YS") OR
+        (getWindowSize == "Ys") OR
+        (getWindowSize == "yS") OR
+        (getWindowSize == "yes") OR
+        (getWindowSize == "Yes") OR
+        (getWindowSize == "YEs") OR
+        (getWindowSize == "YES") OR
+        (getWindowSize == "yEs") OR
+        (getWindowSize == "yES") OR
+        (getWindowSize == "yeS")
+        )
+    {
+        //! To get the screen pixel count
+        DWORD screenWidth = getScreenWidth();
+        DWORD screenHeight = getScreenHeight();
+
+        initwindow(screenWidth, screenHeight, "", -3, -3);
+        //!projectTitle(); //! To call function "projectTitle" from welcomeScreen.h
+        intro();
+
+
+        getch();
+        closegraph();
+
+    }
+
+    else {
+        std::cout << std:: endl << "This program is only compatible for fullscreen mode only" << std::endl << std::endl;
+        main();
+    }
+}
+
+DWORD getScreenWidth() {
+    //! To get the screen pixel count of x-axis
+    DWORD screenWidth = GetSystemMetrics(SM_CXSCREEN);
+    return screenWidth;
+}
+
+DWORD getScreenHeight() {
+    //! To get the screen pixel count of y-axis
+    DWORD screenHeight = GetSystemMetrics(SM_CYSCREEN);
+    return screenHeight;
+}

@@ -1,0 +1,10 @@
+class log_regs
+{
+    public:
+        log_regs();
+
+    protected:
+
+    private:
+};
+

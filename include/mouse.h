@@ -1,0 +1,3 @@
+
+void mouseLeftClick();
+void mouseRightClick();

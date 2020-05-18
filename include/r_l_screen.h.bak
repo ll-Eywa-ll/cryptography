@@ -1,0 +1,4 @@
+void regs();
+void log();
+void setup();
+void cursorPosition();
